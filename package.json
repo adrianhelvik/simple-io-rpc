@@ -8,6 +8,7 @@
     "url": "https://github.com/adrianhelvik/simple-io-rpc"
   },
   "dependencies": {
+    "babel-polyfill": "^6.23.0",
     "regenerator": "^0.9.7",
     "socket.io": "^1.7.3",
     "socket.io-client": "^1.7.3",
