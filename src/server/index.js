@@ -13,7 +13,7 @@ module.exports = io => routes => {
         body: await routes[fn].apply(metaData, args)
       })
     } catch (error) {
-      if (error instanceof RpcError) {
+      if (error && error.isRpcError) {
         io.emit(id, {
           error: error.message
         })

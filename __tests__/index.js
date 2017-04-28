@@ -1,7 +1,7 @@
 const EventEmitter = require('events')
 const events = new EventEmitter()
 const sleep = time => new Promise(resolve => setTimeout(resolve, time))
-const Rpc = require('..')
+const Rpc = require('../src')
 const { RpcError } = Rpc
 const client = Rpc.client(events)
 const server = Rpc.server(events)({
